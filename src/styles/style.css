@@ -1,0 +1,29 @@
+
+.title {
+  font-size: 15px;
+  color: var(--color-text);
+  margin-left: 4rem;
+  margin-right: 6rem;
+  font-weight: 300;
+}
+
+.title__white {
+  font-size: 15px;
+  color: var(--color-white);
+  margin-left: 4rem;
+  margin-right: 6rem;
+  font-weight: 300;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1200px) {
+  .title {
+    opacity: 0;
+  }
+
+  .title__white {
+    opacity: 0;
+    margin: 0;
+    display: none;
+  }
+}
