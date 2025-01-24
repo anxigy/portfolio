@@ -14,7 +14,7 @@ const Container = styled.main`
 export const MainPage = () => {
   return (
     <div>
-      {/* <Header/> */}
+      <Header/>
       <Container>
         <About />
         <Projects />
