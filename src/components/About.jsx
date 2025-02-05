@@ -67,13 +67,13 @@ const BoldText = styled.span`
   font-weight: bold;
 `;
 
-export const About = () => {
+export const About = ({screenRef}) => {
 
   return (
-    <Container id="Container">
+    <Container id="Container" >
       {/* <MainTitle>{title}</MainTitle> */}
-      <MainWrap>
-        <MainSection>
+      <MainWrap >
+        <MainSection ref={screenRef}>
           <TextSection>
             <MainTitle>{`Hello\nI'm Lucy`}</MainTitle>
             <Description>
