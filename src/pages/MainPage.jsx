@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Header } from "../components/Header";
 import { About } from "../components/About";
-import { Projects } from "../components/Projects";
+import { Career } from "../components/Career";
 import styled from "styled-components";
 
 const Container = styled.main`
@@ -38,7 +38,7 @@ export const MainPage = () => {
       <Header changeColor={screenHeight < scrollPosition}/>
       <Container ref={ref}>
         <About screenRef={screenRef}/>
-        <Projects />
+        <Career />
       </Container>
     </div>
   )

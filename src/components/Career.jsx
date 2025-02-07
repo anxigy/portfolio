@@ -94,7 +94,7 @@ const TechBadge = styled.span`
   font-weight: bold;
 `;
 
-export const Projects = () => {
+export const Career = () => {
   return (
     <Container>
       <MainTitle>CAREER</MainTitle>
