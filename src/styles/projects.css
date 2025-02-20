@@ -1,112 +1,81 @@
 
-#projects {
-  /* padding-top: 8rem;
-  margin-top: 8rem;
-  padding-bottom: 8rem; */
-  display: flex;
-}
-
-.project__img {
-  width: 100%;
-  /* height: 150px; */
-  display: block;
-  margin-top: 1rem;
-}
-
-.card__link {
-  display: inline-block;
-  border: 1px solid var(--color-black);
-  padding: 3px 10px;
-  border-radius: 1rem;
-  margin-top: 2rem;
-}
-
-.link__title {
-  font-size: 12px;
-}
-
-
-.project__maxconatiner {
-  display: flex;
-}
-
-.project__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
-  margin-right: 6rem;
-}
-
-
 .project__card {
+  width: 290px;
+  flex: 0 0 auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
   background-color: #ECECEC;
-  border-radius: 20px 20px 20px 0px;
-  padding: 1rem;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card__haeder {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+.card__header {
+  padding-top: 3rem;
+}
+.card__count {
+  font-size: 12px;
+  font-weight: 300;
+}
+.card__title {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .card__description {
   font-size: 12px;
   color: var(--color-gray);
-  text-align: right;
-  margin-right: 8px;
+  text-align: center;
   margin-top: 8px;
 }
 
-.card__title {
-  font-size: 2rem;
-  margin-right: 8px;
-  font-weight: 700;
+.project__img {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
 }
 
-.card__count {
+
+.hover__container { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hover__date {
   font-size: 12px;
   font-weight: 300;
+  padding-top: 0.5rem;
 }
 
-.card__contents {
-  margin-top: 3rem;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-}
-
-.content__title {
-  width: 6rem;
+.hover__type{
   font-size: 12px;
-  margin-bottom: 5px;
+  font-weight: 500;
+  background-color: #000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 10px;
 }
 
-.content__data {
-  font-size: 12px;
+.hover__link { 
+  border: 1px solid #000;
+  font-size: 20px;
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px 0px;
+  border-radius: 10px;
 }
 
-/* 반응형 */
-@media screen and (max-width: 1200px) {
-  #projects {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project__container {
-    display: block;
-    margin-right: 0;
-    width: 50%;
-  }
-
-  .project__card {
-    margin-top: 3rem;
-  }
-
-  .project__maxconatiner {
-    justify-content: center;
-  }
+.hover__description {
+  font-size: 11px;
+  margin-top: 10px;
 }
