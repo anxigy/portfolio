@@ -4,6 +4,7 @@ import { About } from "../components/About";
 import { Career } from "../components/Career";
 import styled from "styled-components";
 import { Projects } from "../components/Projects";
+import { Education } from "../components/Education";
 
 const Container = styled.main`
   height: 100vh;
@@ -41,6 +42,7 @@ export const MainPage = () => {
         <About screenRef={screenRef}/>
         <Career />
         <Projects />
+        <Education />
       </Container>
     </div>
   )
