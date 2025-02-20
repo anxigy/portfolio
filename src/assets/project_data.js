@@ -21,7 +21,7 @@ export const ProjectData = [
     type : "APP",
     start : "2022.12",
     to: "2023.12",
-    link: 'a59d95547dc84417b15488d2e29a46b5',
+    link: 'https://inky-september-d38.notion.site/PETHROOM-1a09beab5a908143a50ef4b3b2ae17a4?pvs=4',
     image: require('../assets/pethroom.png')
   },
   {
