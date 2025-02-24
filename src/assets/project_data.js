@@ -5,6 +5,7 @@ export const ProjectData = [
     type : "APP",
     start : "2020.08",
     to: "2024.07",
+    link: 'https://inky-september-d38.notion.site/WAKE-UF-1a09beab5a908121a073c4a816eff06f?pvs=4',
     image: require('../assets/wakeuf.png')
   },
   {
@@ -13,6 +14,7 @@ export const ProjectData = [
     type : "WEB",
     start : "2021.01",
     to: "2022.12",
+    link: 'https://inky-september-d38.notion.site/WNMS-1a09beab5a908108b8ddc5476f9da78a?pvs=4',
     image: require('../assets/wnms.png')
   },
   {
@@ -30,6 +32,7 @@ export const ProjectData = [
     type : "WEB",
     start : "2023.03",
     to: "2023.08",
+    link: 'https://inky-september-d38.notion.site/1a09beab5a9081609671e8f2ff9051f3?pvs=4',
     image: require('../assets/pindirect.png')
   },
   {
@@ -38,6 +41,7 @@ export const ProjectData = [
     type : "WEB",
     start : "2023.07",
     to: "2023.11",
+    link: 'https://inky-september-d38.notion.site/1a09beab5a9081e8a351f36ab0b650ae?pvs=4',
     image: require('../assets/admin.png')
   },
   { 
@@ -46,6 +50,7 @@ export const ProjectData = [
     type : "WEB",
     start : "2024.01",
     to: "2024.07",
+    link: 'https://inky-september-d38.notion.site/1a09beab5a908082b097d53704e59716?pvs=4',
     image: require('../assets/jfac.png')
   },
   {

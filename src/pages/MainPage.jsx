@@ -37,7 +37,7 @@ export const MainPage = () => {
 
   return (
     <div>
-      <Header changeColor={screenHeight < scrollPosition}/>
+      {/* <Header changeColor={screenHeight < scrollPosition}/> */}
       <Container ref={ref}>
         <About screenRef={screenRef}/>
         <Career />

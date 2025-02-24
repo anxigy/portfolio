@@ -69,11 +69,11 @@ export const Projects = () => {
       <Wrapper>
         <ProjectHeader>
           <Title>PROJECT</Title>
-          <Tabs>
+          {/* <Tabs>
             <Tab active>ALL</Tab>
             <Tab>WEB</Tab>
             <Tab>APP</Tab>
-          </Tabs>
+          </Tabs> */}
         </ProjectHeader>
         <CardWrapper>
           {ProjectData.map((project, index) => (
