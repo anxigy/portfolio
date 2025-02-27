@@ -16,6 +16,10 @@ const Container = styled.section`
   height: 100%;
 
   align-items: center;
+  @media (max-width: 639px) {
+    padding-top: 3rem;
+    justify-content: center;
+  }
 `
 
 const ProjectHeader = styled.header`
@@ -25,11 +29,21 @@ const ProjectHeader = styled.header`
   align-items: center;
   border-bottom: 1px solid #6e6e6e;
   padding: 10px 0px;
+
+
+  @media (max-width: 639px) {
+    border-bottom: none;
+    padding: 0;
+    justify-content: center;
+  }
 `
 
 const Wrapper = styled.div`
   width: 70%;
   height: 80%;
+  @media (max-width: 639px) {
+   width: 100%;
+  }
 `
 
 const CardWrapper = styled.div`
@@ -40,6 +54,12 @@ const CardWrapper = styled.div`
   white-space: nowrap;
   height: 85%;
   &::-webkit-scrollbar { display: none; }
+  @media (max-width: 639px) {
+    padding-top: 0;
+    height: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `
 
 const Title = styled.h1`
@@ -49,19 +69,19 @@ const Title = styled.h1`
     font-style: normal;
 `;
 
-const Tabs = styled.div`
-  display: flex;
-  gap: 20px;
-  font-size: 14pt;
-`;
+// const Tabs = styled.div`
+//   display: flex;
+//   gap: 20px;
+//   font-size: 14pt;
+// `;
 
-const Tab = styled.span`
-  cursor: pointer;
-  color: ${(props) => (props.active ? "white" : "#777")};
-  font-weight: ${(props) => (props.active ? "bold" : "normal")};
-  border-bottom: ${(props) => (props.active ? "2px solid white" : "none")};
-  padding-bottom: 5px;
-`;
+// const Tab = styled.span`
+//   cursor: pointer;
+//   color: ${(props) => (props.active ? "white" : "#777")};
+//   font-weight: ${(props) => (props.active ? "bold" : "normal")};
+//   border-bottom: ${(props) => (props.active ? "2px solid white" : "none")};
+//   padding-bottom: 5px;
+// `;
 
 export const Projects = () => {
   return (

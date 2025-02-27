@@ -14,6 +14,9 @@ const Container = styled.section`
   height: 100%;
 
   align-items: center;
+  @media (max-width: 639px) {
+    padding-top: 3rem;
+  }
 `
 
 const ProjectHeader = styled.header`
@@ -23,6 +26,9 @@ const ProjectHeader = styled.header`
   align-items: center;
   /* border-bottom: 1px solid #6e6e6e; */
   padding: 10px 0px;
+  @media (max-width: 639px) {
+   justify-content: center;
+  }
 `
 
 const Wrapper = styled.div`
@@ -42,6 +48,9 @@ const EducationWrapper = styled.div`
   width: 100%;
   margin-top: 2rem;
   height: 100%;
+  @media (max-width: 639px) {
+    margin-top: 0;
+  }
 `
 
 const EducationItem = styled.div`
@@ -50,12 +59,23 @@ const EducationItem = styled.div`
   width: 100%;
   height: 40%;
   margin-top: 3rem;
+
+  @media (max-width: 639px) {
+   flex-direction: column;
+  }
 `
 const EducationHeader = styled.div`
   width: 30%;
+
+  @media (max-width: 639px) {
+    width: 100%;
+  }
 `
 const EducationContent = styled.div`
   width: 70%;
+  @media (max-width: 639px) {
+    width: 100%;
+  }
 `
 const EduTitle = styled.h1`
   font-size: 20px;
@@ -65,6 +85,9 @@ const EduDate = styled.p`
   font-weight: 300;
   color: #2d2d2d;
   margin-top: 1rem;
+  @media (max-width: 639px) {
+    margin-top: 10px;
+  }
 `
 
 const ListContainer = styled.ul`
@@ -72,10 +95,16 @@ const ListContainer = styled.ul`
   padding-left: 20px;
   font-size: 18px;
   color: #333;
+  @media (max-width: 639px) {
+    margin-top: 20px;
+  }
 `;
 
 const ListItem = styled.li`
   margin-bottom: 10px;
+  @media (max-width: 639px) {
+    font-size: 11px;
+  }
 `;
 
 const SubList = styled.ul`
@@ -90,6 +119,9 @@ const Border = styled.div`
   width: 100%;
   height: 1px;
   background-color: #000;
+  @media (max-width: 639px) {
+    margin-top: 3rem;
+  }
 `
 
 export const Education = () => {

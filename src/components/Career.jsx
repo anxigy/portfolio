@@ -16,6 +16,9 @@ const Container = styled.section`
   padding-top: 120px;
   flex-direction: column;
   height: 100%;
+  @media (max-width: 639px) {
+    padding-top: 3rem;
+  }
 `
 
 const MainTitle = styled.h1`
@@ -31,6 +34,13 @@ const CareerWrapper = styled.div`
   justify-content: center;
   margin-top: 2rem;
   height: 65%;
+
+  @media (max-width: 639px) {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    align-items: center;
+  }
 `;
 
 const Card = styled.div`
@@ -43,30 +53,47 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 639px) {
+    width: 80%;
+    padding: 20px;
+  }
 `;
 
 const CompanyTitle = styled.h2`
   font-size: 32px;
   margin-bottom: 5px;
   font-weight: 300;
+  @media (max-width: 639px) {
+    font-size: 20px;
+  }
 `;
 
 const Duration = styled.p`
   font-size: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
+  @media (max-width: 639px) {
+    font-size: 10px;
+  }
 `;
 
 const Role = styled.p`
   font-size: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
+  @media (max-width: 639px) {
+    font-size: 10px;
+  }
 `;
 
 const TaskTitle = styled.h2`
   font-size: 20px;
   margin: 20px 0px;
   font-weight: 600;
+  @media (max-width: 639px) {
+    font-size: 15px;
+    margin: 10px 0px;
+  }
 `
 
 const TaskList = styled.ul`
@@ -74,6 +101,10 @@ const TaskList = styled.ul`
   list-style: circle;
   padding-left: 20px;
   margin-bottom: 20px;
+  @media (max-width: 639px) {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
 `;
 
 const TaskItem = styled.li`
@@ -84,6 +115,9 @@ const TechStack = styled.div`
   margin-top: 10px;
   display: flex;
   gap: 10px;
+  @media (max-width: 639px) {
+    margin-top: 0px;
+  }
 `;
 
 const TechBadge = styled.span`
@@ -92,6 +126,9 @@ const TechBadge = styled.span`
   border-radius: 15px;
   font-size: 12px;
   font-weight: bold;
+  @media (max-width: 639px) {
+    font-size: 10px;
+  }
 `;
 
 export const Career = () => {
@@ -109,6 +146,7 @@ export const Career = () => {
               <TaskItem>제주도 협업 프로젝트 앱 및 관리자 웹 사이트 초기 개발</TaskItem>
               <TaskItem>H사 협업 프로젝트 웹 사이트 개발</TaskItem>
               <TaskItem>페스룸 앱 개발</TaskItem>
+              <TaskItem>핀다이렉트 협업 중고폰 검사 웹 사이트 개발</TaskItem>
             </TaskList>
           </div>
           <TechStack>
@@ -124,9 +162,9 @@ export const Career = () => {
             <Role>프론트엔드 개발자</Role>
             <TaskTitle>주요업무</TaskTitle>
             <TaskList>
+              <TaskItem>중고폰 외관검사 PWA 유지보수</TaskItem>
               <TaskItem>제주도 협업 프로젝트 앱 및 관리자 웹 사이트 유지보수</TaskItem>
               <TaskItem>제주문화예술재단 웹 사이트 개발</TaskItem>
-              <TaskItem>핀다이렉트 협업 중고폰 검사 웹 사이트 개발</TaskItem>
             </TaskList>
           </div>
           <TechStack>
