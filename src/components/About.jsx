@@ -40,6 +40,7 @@ const MainSection = styled.div`
     align-items: flex-start;
     justify-content: center;
     height: 100%;
+    padding-top: 5rem;
   }
 `
 const TextSection = styled.div`
