@@ -59,7 +59,7 @@ const ProfileSection = styled.div`
     margin-top: 20px;
     text-align: center;
   }
-   @media (max-width: 1100px) {
+   @media (max-width: 1100px) and (min-width: 640px) {
     width: auto;
     height: 500px;
     margin-top: 2rem;
