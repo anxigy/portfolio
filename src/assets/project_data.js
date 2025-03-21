@@ -53,12 +53,12 @@ export const ProjectData = [
     link: 'https://inky-september-d38.notion.site/1a09beab5a908082b097d53704e59716?pvs=4',
     image: require('../assets/jfac.png')
   },
-  {
-    title: "포트폴리오",
-    description: "나만의 포트폴리오 웹 사이트",
-    type : "WEB",
-    start : "2024.12",
-    to: "2025.02",
-    image: require('../assets/portfolio.png')
-  },
+  // {
+  //   title: "포트폴리오",
+  //   description: "나만의 포트폴리오 웹 사이트",
+  //   type : "WEB",
+  //   start : "2024.12",
+  //   to: "2025.02",
+  //   image: require('../assets/portfolio.png')
+  // },
 ]
