@@ -10,7 +10,8 @@
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+  cursor: url('/src/assets/cursor.png'), auto;
 }
 
 body {
