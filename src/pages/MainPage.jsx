@@ -5,6 +5,7 @@ import { Career } from "../components/Career";
 import styled from "styled-components";
 import { Projects } from "../components/Projects";
 import { Education } from "../components/Education";
+import { Main } from "../components/Main";
 
 const Container = styled.main`
   height: 100vh;
@@ -39,7 +40,8 @@ export const MainPage = () => {
     <div>
       {/* <Header changeColor={screenHeight < scrollPosition}/> */}
       <Container ref={ref}>
-        <About screenRef={screenRef}/>
+        {/* <About screenRef={screenRef}/> */}
+        <Main screenRef={screenRef} />
         <Career />
         <Projects />
         <Education />

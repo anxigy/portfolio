@@ -27,3 +27,23 @@
     display: none;
   }
 }
+
+.grid_design {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  --background-color: #fff;
+  --line-color : #ffa3b12b;
+  --spacing : 25px;
+  --line-thickness : 2px;
+  --line-spacing : calc(var(--spacing) - var(--line-thickness));
+
+  background:
+  linear-gradient(to bottom, transparent var(--line-spacing), var(--line-color) var(--line-spacing)) 0 0 / 100vw var(--spacing) repeat-y,
+  linear-gradient(to right, transparent var(--line-spacing), var(--line-color) var(--line-spacing)) 0 0 / var(--spacing) 100vh repeat-x
+  var(--background-color); 
+}

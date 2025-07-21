@@ -16,7 +16,7 @@
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin: 0;
-  background-color: #000
+  /* background-color: #000 */
 }
 
 h1,h2,h3,p,ul {
@@ -39,4 +39,11 @@ button {
   background-color: transparent;
   border: 0;
   outline: 0;
+}
+
+@font-face {
+  font-family: '04b30';
+  src: url('/src/assets/fonts/04b30.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
