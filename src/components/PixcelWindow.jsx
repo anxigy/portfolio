@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
-const WindowWrapper = styled.div`
+const WindowWrapper = styled(motion.div)`
   position: absolute;
   top: ${({ top }) => top}px;
   left: ${({ left }) => left}px;
@@ -49,10 +50,17 @@ const Content = styled.div`
   background-color: #fff;
 `;
 
+const windowVariants = {
+  hidden: { opacity: 0, scale: 0.5, y: -50 },
+  visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 20 } }
+};
+
 
 export const PixcelWindow = ({width, height, top, left, right}) => {
   return (
-    <WindowWrapper width={width} top={top} left={left} right={right}>
+    <WindowWrapper    variants={windowVariants}
+    initial="hidden"
+    animate="visible" width={width} top={top} left={left} right={right}>
       <TitleBar>
         <Title></Title> 
         <CloseButton>X</CloseButton>
