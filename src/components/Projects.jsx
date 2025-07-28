@@ -10,11 +10,11 @@ const Container = styled.section`
   display: flex;
   text-align: center;
   font-size: 50pt;
-  background-color: #fff;
-  padding-top: 100px;
+  background-color: #E63946;
+  /* padding-top: 100px; */
   flex-direction: column;
   height: 100%;
-
+  justify-content: center;
   align-items: center;
   @media (max-width: 639px) {
     padding-top: 3rem;
@@ -83,24 +83,32 @@ const Title = styled.h1`
 //   padding-bottom: 5px;
 // `;
 
+const StyledGrid = styled.div.attrs({
+  className: 'grid_design' 
+})`
+  border-radius: 60px;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  overflow: hidden;
+  
+`;
 export const Projects = () => {
   return (
     <Container>
-      <Wrapper>
+      {/* <Wrapper>
         <ProjectHeader>
           <Title>PROJECT</Title>
-          {/* <Tabs>
-            <Tab active>ALL</Tab>
-            <Tab>WEB</Tab>
-            <Tab>APP</Tab>
-          </Tabs> */}
+          </Tabs> 
         </ProjectHeader>
         <CardWrapper>
           {ProjectData.map((project, index) => (
             <Project data={project} idx={index}/>
           ))}
         </CardWrapper>
-      </Wrapper>
+      </Wrapper> */}
+        <StyledGrid>
+        
+        </StyledGrid>
     </Container>
   )
 }
